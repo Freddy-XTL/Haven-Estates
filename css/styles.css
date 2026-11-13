@@ -1,0 +1,60 @@
+:root {
+    --primary-color: #123D32;
+}
+
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cormorant Garamond", "sans-serif";
+}
+
+a {
+    text-decoration: none;
+    font-family: "Inter", "sans-serif";
+}
+
+/* Home Page */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F8F8F4;
+    padding: 40px;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+}
+
+.nav-logo {
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.nav-links .nav-active {
+    border-bottom: 1.8px solid var(--primary-color);
+}
+
+.nav-btn {
+    padding: 15px 50px;
+    background-color: #C6A66B;
+    border-radius: 6px;
+}
+
+.nav-btn a {
+    color: var(--primary-color);
+}
