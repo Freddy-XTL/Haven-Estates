@@ -273,11 +273,11 @@ a {
     margin-bottom: 14px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 1px;
 }
 
 .property-extra-info sup {
-    font-size: 0.65em;
+    font-size: 1em;
 }
 
 .property-link {
