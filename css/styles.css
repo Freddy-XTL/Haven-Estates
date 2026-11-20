@@ -171,3 +171,151 @@ a {
     padding-left: 6px;
     font-size: 1.2rem;
 }
+
+.collection-property {
+    margin: 60px 80px;
+}
+
+.collection-property-title {
+    font-size: 0.8rem;
+    margin-bottom: 1.7rem;
+}
+
+.collection-property h1 {
+    color: var(--primary-color);
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.collection-property h4 {
+    color: gray;
+    font-size: 1.3rem;
+}
+
+.property-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+    margin-top: 30px;
+}
+
+.property-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: 1px solid #eceae4;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.property-image {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background-color: #e6e4de;
+}
+
+.property-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.property-badge {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background-color: rgba(255, 255, 255, 0.92);
+    color: #2f3a36;
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 5px 9px;
+    border-radius: 3px;
+}
+
+.property-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 24px;
+}
+
+.property-cost {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #1f2925;
+    margin-bottom: 8px;
+}
+
+.property-title {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.45rem;
+    font-weight: 400;
+    color: #24302c;
+    margin: 0 0 6px;
+}
+
+.property-location {
+    font-size: 0.85rem;
+    color: #7c827f;
+    margin-bottom: 18px;
+}
+
+.property-extra-info {
+    font-size: 0.82rem;
+    color: #6f7572;
+    padding-top: 16px;
+    border-top: 1px solid #eceae4;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.property-extra-info sup {
+    font-size: 0.65em;
+}
+
+.property-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.85rem;
+    color: #24302c;
+    text-decoration: none;
+    margin-top: auto;
+    width: fit-content;
+    color: var(--primary-color);
+}
+
+.property-link:hover {
+    text-decoration: underline;
+}
+
+.property-link .arrow {
+    font-size: 0.8rem;
+    transition: transform 0.2s ease;
+}
+
+.property-link:hover .arrow {
+    transform: translate(2px, -2px);
+}
+
+.property-box {
+    padding: 15px 30px;
+    width: 40%;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.property-box a {
+    color: white;
+}
