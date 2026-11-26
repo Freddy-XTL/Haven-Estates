@@ -406,3 +406,63 @@ a {
 .discover-btn:hover .arrow {
     transform: translate(2px, -2px);
 }
+
+.difference-section {
+    background-color: #163629;
+    padding: 110px 60px;
+}
+
+.difference-container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.difference-eyebrow {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #c2aa78;
+    margin: 0 0 24px 0;
+}
+
+.difference-container h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 62px;
+    color: #f4f3ee;
+    margin: 0 0 64px 0;
+}
+
+.difference-grid {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    gap: 50px;
+}
+
+.difference-number {
+    display: block;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    color: #c2aa78;
+    margin-bottom: 18px;
+}
+
+.difference-item h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 34px;
+    color: #f4f3ee;
+    margin: 0 0 14px 0;
+}
+
+.difference-item p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #b7c4be;
+    margin: 0;
+    max-width: 360px;
+}
