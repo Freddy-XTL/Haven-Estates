@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/script.js" defer></script>
-    <title>Haven Estates | Home</title>
+    <title>Haven Estates | Properties</title>
 </head>
 <body>
     <header>
@@ -28,9 +28,274 @@
         </nav>
     </header>
 
-    <main>
+    
+<main>
 
-    </main>
+    <!-- PROPERTIES HERO SECTION -->
+
+    <section class="properties-hero">
+
+        <div class="properties-hero-content">
+
+            <p>THE HAVEN COLLECTION</p>
+
+            <h1>Explore Our Properties</h1>
+
+            <h4>
+                Distinctive homes. Desirable addresses.
+                Discover a place that feels entirely yours.
+            </h4>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROPERTIES SECTION -->
+
+    <section class="properties-listing">
+
+        <!-- PROPERTY FILTERS -->
+
+        <div class="property-filter">
+
+            <div class="filter-group">
+
+                <label for="location">Location</label>
+
+                <select id="location">
+                    <option>All Cape Town suburbs</option>
+                    <option>Camps Bay</option>
+                    <option>Sea Point</option>
+                    <option>Constantia</option>
+                    <option>Gardens</option>
+                    <option>Clifton</option>
+                </select>
+
+            </div>
+
+
+            <div class="filter-group">
+
+                <label for="type">Property type</label>
+
+                <select id="type">
+                    <option>All property types</option>
+                    <option>House</option>
+                    <option>Apartment</option>
+                    <option>Villa</option>
+                </select>
+
+            </div>
+
+
+            <div class="filter-group">
+
+                <label for="min-price">Minimum price</label>
+
+                <select id="min-price">
+                    <option>No minimum</option>
+                    <option>R1,000,000</option>
+                    <option>R2,000,000</option>
+                    <option>R3,000,000</option>
+                    <option>R5,000,000</option>
+                </select>
+
+            </div>
+
+
+            <div class="filter-group">
+
+                <label for="max-price">Maximum price</label>
+
+                <select id="max-price">
+                    <option>No maximum</option>
+                    <option>R2,000,000</option>
+                    <option>R3,000,000</option>
+                    <option>R5,000,000</option>
+                    <option>R10,000,000</option>
+                </select>
+
+            </div>
+
+
+            <!-- FILTER BUTTONS -->
+
+            <div class="filter-actions">
+
+                <button type="button" class="search-property-btn">
+                    Search properties ↗
+                </button>
+
+                <button type="reset" class="reset-filter-btn">
+                    Reset filters
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- LISTING INFORMATION -->
+
+        <div class="listing-header">
+
+            <p>6 of 24 considered homes</p>
+
+            <div class="listing-sort">
+
+                <label for="sort">Sort by:</label>
+
+                <select id="sort">
+                    <option>Newest listings</option>
+                    <option>Price: Low to high</option>
+                    <option>Price: High to low</option>
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <!-- PROPERTY CARDS -->
+
+        <div class="property-cards">
+
+            <!-- PROPERTY 1 -->
+            <article class="property-card">
+                <div class="property-image">
+                    <img src="images/property-1.jpg"
+                         alt="The Clifton House">
+                </div>
+                <div class="property-content">
+                    <p class="property-cost">R 24,500,000</p>
+                    <h2 class="property-title">The Clifton House</h2>
+                    <p class="property-location">Clifton, Cape Town</p>
+                    <div class="property-extra-info">
+                        <span>4 beds</span>
+                        <span>·</span>
+                        <span>4 baths</span>
+                        <span>·</span>
+                        <span>420 m²</span>
+                    </div>
+                    <a href="#" class="property-link">View property <span class="arrow">↗</span></a>
+                </div>
+            </article>
+
+            <!-- PROPERTY 2 -->
+            <article class="property-card">
+                <div class="property-image">
+                    <img src="images/property-2.jpg"
+                         alt="Camps Bay Retreat">
+                </div>
+                <div class="property-content">
+                    <p class="property-cost">R 18,750,000</p>
+                    <h2 class="property-title">Camps Bay Retreat</h2>
+                    <p class="property-location">Camps Bay, Cape Town</p>
+                    <div class="property-extra-info">
+                        <span>5 beds</span>
+                        <span>·</span>
+                        <span>4 baths</span>
+                        <span>·</span>
+                        <span>385 m²</span>
+                    </div>
+                    <a href="#" class="property-link">View property <span class="arrow">↗</span></a>
+                </div>
+            </article>
+
+            <!-- PROPERTY 3 -->
+            <article class="property-card">
+                <div class="property-image">
+                    <img src="images/property-3.jpg"
+                         alt="Constantia Oak Residence">
+                </div>
+                <div class="property-content">
+                    <p class="property-cost">R 16,200,000</p>
+                    <h2 class="property-title">Constantia Oak Residence</h2>
+                    <p class="property-location">Constantia, Cape Town</p>
+                    <div class="property-extra-info">
+                        <span>4 beds</span>
+                        <span>·</span>
+                        <span>3 baths</span>
+                        <span>·</span>
+                        <span>460 m²</span>
+                    </div>
+                    <a href="#" class="property-link">View property <span class="arrow">↗</span></a>
+                </div>
+            </article>
+
+            <!-- PROPERTY 4 -->
+            <article class="property-card">
+                <div class="property-image">
+                    <img src="images/property-4.jpg"
+                         alt="Sea Point Penthouse">
+                    <span class="property-badge">OCEAN VIEWS</span>
+                </div>
+                <div class="property-content">
+                    <p class="property-cost">R 12,800,000</p>
+                    <h2 class="property-title">Sea Point Penthouse</h2>
+                    <p class="property-location">Sea Point, Cape Town</p>
+                    <div class="property-extra-info">
+                        <span>3 beds</span>
+                        <span>·</span>
+                        <span>3 baths</span>
+                        <span>·</span>
+                        <span>245 m²</span>
+                    </div>
+                    <a href="#" class="property-link">View property <span class="arrow">↗</span></a>
+                </div>
+            </article>
+
+            <!-- PROPERTY 5 -->
+            <article class="property-card">
+                <div class="property-image">
+                    <img src="images/property-5.jpg"
+                         alt="Bishopscourt Garden Villa">
+                    <span class="property-badge">FOR SALE</span>
+                </div>
+                <div class="property-content">
+                    <p class="property-cost">R 21,900,000</p>
+                    <h2 class="property-title">Bishopscourt Garden Villa</h2>
+                    <p class="property-location">Bishopscourt, Cape Town</p>
+                    <div class="property-extra-info">
+                        <span>5 beds</span>
+                        <span>·</span>
+                        <span>5 baths</span>
+                        <span>·</span>
+                        <span>510 m²</span>
+                    </div>
+                    <a href="#" class="property-link">View property <span class="arrow">↗</span></a>
+                </div>
+            </article>
+
+            <!-- PROPERTY 6 -->
+            <article class="property-card">
+                <div class="property-image">
+                    <img src="images/property-6.jpg"
+                         alt="Green Point Loft">
+                    <span class="property-badge">NEW LISTING</span>
+                </div>
+                <div class="property-content">
+                    <p class="property-cost">R 6,950,000</p>
+                    <h2 class="property-title">Green Point Loft</h2>
+                    <p class="property-location">Green Point, Cape Town</p>
+                    <div class="property-extra-info">
+                        <span>2 beds</span>
+                        <span>·</span>
+                        <span>2 baths</span>
+                        <span>·</span>
+                        <span>165 m²</span>
+                    </div>
+                    <a href="#" class="property-link">View property <span class="arrow">↗</span></a>
+                </div>
+            </article>
+
+        </div>
+
+    </section>
+
+</main>
+
 
     <footer class="footer">
         <div class="footer-container">

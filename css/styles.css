@@ -572,3 +572,268 @@ a {
 .footer-legal span {
     color: #C7A35B;
 }
+
+
+/* =====================================
+   PROPERTIES PAGE
+===================================== */
+
+
+/* HERO SECTION */
+
+.properties-hero {
+    background-color: #EFEEE7;
+    padding: 75px 7.3%;
+    min-height: 309px;
+}
+
+.properties-hero-content p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 11px;
+    color: #69746F;
+    margin-bottom: 27px;
+}
+
+.properties-hero-content h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 64px;
+    font-weight: 400;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.properties-hero-content h4 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #69746F;
+}
+
+
+/* PROPERTIES LISTING */
+
+.properties-listing {
+    background-color: #F8F8F4;
+    padding: 32px 7.3% 70px;
+}
+
+
+/* FILTER CONTAINER */
+
+.property-filter {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px 16px;
+
+    background-color: white;
+    padding: 25px 24px;
+    border-radius: 7px;
+}
+
+
+/* FILTER GROUPS */
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filter-group label {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    color: #69746F;
+}
+
+.filter-group select {
+    width: 100%;
+    height: 49px;
+    padding: 0 14px;
+
+    background-color: #F8F8F4;
+    border: 1px solid #DCDCD5;
+    border-radius: 3px;
+
+    color: var(--primary-color);
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+
+    cursor: pointer;
+}
+
+
+/* FILTER ACTIONS */
+
+.filter-actions {
+    grid-column: 1 / -1;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-property-btn {
+    background-color: var(--primary-color);
+    color: white;
+
+    border: none;
+    border-radius: 4px;
+
+    padding: 19px 45px;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+.search-property-btn:hover {
+    background-color: #1B5948;
+}
+
+.reset-filter-btn {
+    background: none;
+    border: none;
+
+    color: #69746F;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+
+/* LISTING HEADER */
+
+.listing-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 65px 0 26px;
+}
+
+.listing-header p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    color: var(--primary-color);
+}
+
+.listing-sort {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.listing-sort label {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    color: var(--primary-color);
+}
+
+.listing-sort select {
+    border: none;
+    background: transparent;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    color: var(--primary-color);
+
+    cursor: pointer;
+}
+
+
+/* PROPERTY CARDS GRID */
+
+.property-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+
+/* PROPERTY CARD CONTENT */
+
+.property-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 24px;
+}
+
+.property-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid #ECEAE4;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+
+/* PROPERTY IMAGE HOVER EFFECT */
+
+.property-image img {
+    transition: transform 0.4s ease;
+}
+
+.property-card:hover .property-image img {
+    transform: scale(1.05);
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+
+    .property-filter {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .property-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .properties-hero {
+        padding: 55px 6%;
+    }
+
+    .properties-hero-content h1 {
+        font-size: 43px;
+    }
+
+    .properties-listing {
+        padding: 25px 6% 50px;
+    }
+
+    .property-filter {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-property-btn {
+        width: 100%;
+    }
+
+    .listing-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        margin-top: 40px;
+    }
+
+    .property-cards {
+        grid-template-columns: 1fr;
+    }
+
+}
+
